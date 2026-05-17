@@ -1,16 +1,14 @@
 {
-  "required": true,
-  "minVersion": "0.8",
-  "package": "com.sakurakitsurugi.minecraftmodtemplate.mixin",
-  "compatibilityLevel": "JAVA_21",
-  "mixins": [
-  ],
-  "client": [
-  ],
-  "injectors": {
-    "defaultRequire": 1
-  },
-  "overwrites": {
-    "requireAnnotations": true
-  }
+    "overwrites": {"requireAnnotations": true},
+    "mixins": [
+        "common.registrate.AbstractRegistrateAccessor",
+        "common.minecraft.BlockEntityTypeAccessorMixin",
+        "common.minecraft.ModelProviderMixin"
+    ],
+    "mixinextras": {"minVersion": "0.5.3"},
+    "package": "com.sakurakitsurugi.minecraftmodtemplate.mixins",
+    "injectors": {"defaultRequire": 1},
+    "compatibilityLevel": "JAVA_21",
+    "client": [],
+    "required": true
 }
