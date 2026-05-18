@@ -2,7 +2,6 @@
     "overwrites": {"requireAnnotations": true},
     "mixins": [
         "common.registrate.AbstractRegistrateAccessor",
-        "common.minecraft.BlockEntityTypeAccessorMixin",
         "common.minecraft.ModelProviderMixin"
     ],
     "mixinextras": {"minVersion": "0.5.3"},

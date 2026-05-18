@@ -15,7 +15,7 @@ import net.minecraft.world.item.Items;
 
 public class MMTCreativeTab {
     public static RegistryEntry<CreativeModeTab, CreativeModeTab> MMT = MMTCore.REGISTRATE
-            .defaultCreativeTab("tfm",
+            .defaultCreativeTab("mmt",
                     builder -> builder.displayItems(new RegistrateDisplayItemsGenerator("mmt", MMTCore.REGISTRATE))
                             .icon(() -> new ItemStack(Items.POTATO))
                             .title(Component.translatable("mmt.creative_tab.mmt"))
