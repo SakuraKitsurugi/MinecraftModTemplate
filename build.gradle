@@ -29,6 +29,10 @@ neoForge {
     // Specify the version of NeoForge to use.
     version = project.neo_version
 
+    // Put the Minecraft/NeoForge dependencies on the test source set too, so
+    // gametests in src/test compile against net.minecraft.* / NeoForge APIs.
+    addModdingDependenciesTo(sourceSets.test)
+
     parchment {
         mappingsVersion = project.parchment_mappings_version
         minecraftVersion = project.parchment_minecraft_version
@@ -62,6 +66,12 @@ neoForge {
         // The gametest system is also enabled by default for other run configs under the /test command.
         gameTestServer {
             type = "gameTestServer"
+            ideName = "GameTestServer"
+            gameDirectory = project.file('run/gametest')
+            // Launch the run off the test source set so the @GameTestHolder classes
+            // in src/test (and their templates in src/test/resources) are on the run
+            // classpath and get scanned. The test runtime classpath includes main.
+            sourceSet = sourceSets.test
             systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
         }
 
@@ -105,6 +115,7 @@ neoForge {
         // but multi mod projects should define one per mod
         "${mod_id}" {
             sourceSet(sourceSets.main)
+            sourceSet(sourceSets.test)
         }
     }
 }
