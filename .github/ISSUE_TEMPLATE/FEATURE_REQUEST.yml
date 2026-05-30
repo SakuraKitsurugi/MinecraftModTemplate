@@ -1,9 +1,6 @@
 name: "[FEAT]: Feature request"
 description: "Request a new feature or a new mod."
 title: "[FEAT]: "
-labels: []
-projects: []
-type: "Feature"
 
 body:
   - type: checkboxes

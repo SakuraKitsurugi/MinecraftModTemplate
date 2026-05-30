@@ -1,9 +1,6 @@
 name: "[CRASH]: Crash Report"
 description: "Report a bug that crashes the game or prevents startup."
 title: "[CRASH]: "
-labels: []
-projects: []
-type: "Crash"
 
 body:
   - type: checkboxes

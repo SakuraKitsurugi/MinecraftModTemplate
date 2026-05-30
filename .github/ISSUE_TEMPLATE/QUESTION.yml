@@ -1,8 +1,6 @@
 name: "[Q]: Ask a Question"
 description: "Ask a question regarding this project."
 title: "[Q]: "
-labels: []
-type: "Question"
 
 body:
   - type: checkboxes

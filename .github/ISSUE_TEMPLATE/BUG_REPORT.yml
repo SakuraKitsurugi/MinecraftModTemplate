@@ -1,9 +1,6 @@
 name: "[BUG]: Bug report"
 description: "Report a bug where something is not working as expected, but does not crash the game."
 title: "[BUG]: "
-labels: []
-projects: []
-type: "Bug"
 
 body:
   - type: checkboxes
