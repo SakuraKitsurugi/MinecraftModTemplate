@@ -12,26 +12,6 @@ body:
         - label: "No, it was not."
           required: true
 
-  - type: dropdown
-    id: launcher
-    validations:
-      required: true
-    attributes:
-      label: "Are you using Prism or Curseforge?"
-      description: "Prism and Curseforge are the only supported launchers for TFG. Some others may not work. TLAUNCHER DOES NOT WORK."
-      options:
-        - "Yes, I am using Prism or Curseforge."
-        - "No, I am not using Prism or Curseforge."
-
-  - type: checkboxes
-    id: redownload
-    attributes:
-      label: "Have you tried redownloading the pack?"
-      description: "For issues that you are experiencing singularly, redownloading the pack may fix the issue."
-      options:
-        - label: "Not Applicable / Yes, I have tried downloading a new instance."
-          required: true
-
   - type: input
     id: os
     validations:
@@ -46,8 +26,8 @@ body:
     validations:
       required: true
     attributes:
-      label: Modpack Version Used
-      description: Write which version of the modpack you are using.
+      label: Mod Version Used
+      description: Write which version of the mod you are using.
       placeholder: "Example: 0.1.1"
 
   - type: dropdown
@@ -86,7 +66,7 @@ body:
     attributes:
       label: "Please provide a link to your latest.log, if relevant."
       description: |
-        "The `latest.log` file is found in `/logs/` within the modpack files."
+        "The `latest.log` file is found in `/logs/` within Minecraft files."
         "We recommend always using https://mclo.gs/."
         
         > [!CAUTION]

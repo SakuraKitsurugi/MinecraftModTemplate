@@ -12,35 +12,6 @@ body:
         - label: "No, it was not."
           required: true
 
-  - type: dropdown
-    id: launcher
-    validations:
-      required: true
-    attributes:
-      label: "Are you using Prism or Curseforge?"
-      description: "Prism and Curseforge are the only supported launchers for TFG. Some others may not work. TLAUNCHER DOES NOT WORK."
-      options:
-        - "Yes, I am using Prism or Curseforge."
-        - "No, I am not using Prism or Curseforge."
-
-  - type: checkboxes
-    id: dependencies
-    attributes:
-      label: "Did you install required dependencies?"
-      description: "If you are using Prism or Modrinth you will be instructed to install required mods. Do so."
-      options:
-        - label: "Not Applicable / Yes, I have all required dependencies installed."
-          required: true
-
-  - type: checkboxes
-    id: redownload
-    attributes:
-      label: "Have you tried redownloading the pack?"
-      description: "For issues that you are experiencing singularly, redownloading the pack may fix the issue."
-      options:
-        - label: "Not Applicable / Yes, I have tried downloading a new instance."
-          required: true
-
   - type: input
     id: os
     validations:
@@ -55,8 +26,8 @@ body:
     validations:
       required: true
     attributes:
-      label: Modpack Version Used
-      description: Write which version of the modpack you are using.
+      label: Mod Version Used
+      description: Write which version of the mod you are using.
       placeholder: "Example: 0.1.1"
 
   - type: dropdown
